@@ -1,0 +1,65 @@
+version: "3.7"
+
+services:
+  #PHP service
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: mp3-music
+    container_name: mp3-app
+    restart: unless-stopped
+    tty: true
+    environment:
+      SERVICE_NAME: app
+      SERVICE_TAGS: dev
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www
+      - ./data/logs:/usr/local/var/log
+    networks:
+      - mp3-network
+
+  # MySQL service
+  db:
+    image: mysql:5.7
+    container_name: mp3-db
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: mp3-db
+      MYSQL_ROOT_PASSWORD: 123456
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    ports:
+      - "33068:3306"
+    tty: true
+    volumes:
+      - ./data/data:/var/lib/mysql/
+      - ./data/mysql/my.cnf:/etc/mysql/my.cnf
+    networks:
+      - mp3-network
+
+  #Nginx Service
+  nginx:
+    image: nginx:alpine
+    container_name: mp3-nginx
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "8000:80"
+    volumes:
+      - ./:/var/www
+      - ./data/nginx:/etc/nginx/conf.d/
+    networks:
+      - mp3-network
+
+  #Redis service
+  redis:
+    image: redis:alpine
+    container_name: mp3-redist
+    restart: unless-stopped
+    networks:
+      - mp3-network
+networks:
+  mp3-network:
+    driver: bridge

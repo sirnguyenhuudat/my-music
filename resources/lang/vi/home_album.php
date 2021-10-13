@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'title_page' => 'Danh sách album',
+    'url-list-albums' => 'list-albums.html',
+    'trending' => 'Xu hướng album',
+    'top_15' => 'Top 15 Albums',
+    'released_albums' => 'Album mới phát hành',
+    'by' => 'Trình bày bởi - ',
+    'released' => 'Phát hành ',
+    'play_all' => 'Nghe hết',
+    'pause' => 'Tạm dừng',
+    'add_to_queue' => 'Danh sách phát',
+    'song_title' => 'Tên bài hát',
+    'artist' => 'Nghệ sĩ thể hiện',
+    'month_view' => 'Lượt xem tháng',
+    'more' => 'Khác',
+    'comments' => 'Bình luận',
+    'enter_your_name' => 'Nhập tên của bạn..',
+    'enter_your_email' => 'Nhập hộp thư điện tử của bạn..',
+    'enter_your_comment' => 'Nhập bình luận..',
+    'post_your_comment' => 'Gửi bình luận',
+    'leave_a_comment' => 'Để lại bình luận',
+    'songs' => 'Bài hát',
+];

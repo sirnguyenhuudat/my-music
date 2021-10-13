@@ -1,0 +1,9 @@
+#role, #permission {
+    display: none;
+}
+.hidden-table {
+    display: none;
+}
+.select2-selection--multiple .select2-search--inline .select2-search__field {
+    width: 500px !important;
+}

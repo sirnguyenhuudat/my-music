@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'title_page' => 'List Album',
+    'url-list-albums' => 'list-albums.html',
+    'trending' => 'Trending Albums',
+    'top_15' => 'Top 15 Albums',
+    'released_albums' => 'Newly Released Albums',
+    'by' => 'By - ',
+    'released' => 'Released ',
+    'play_all' => 'Play All',
+    'pause' => 'Pause',
+    'add_to_queue' => 'Add To Queue',
+    'song_title' => 'Song Title',
+    'artist' => 'Artist',
+    'month_view' => 'Month View',
+    'more' => 'More',
+    'comments' => 'comments',
+    'enter_your_name' => 'Enter Your Name Here..',
+    'enter_your_email' => 'Enter Your Email Here..',
+    'enter_your_comment' => 'Enter Your Comment Here..',
+    'post_your_comment' => 'post your comment',
+    'leave_a_comment' => 'Leave A Comment',
+    'songs' => 'songs',
+];

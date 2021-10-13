@@ -1,0 +1,45 @@
+<?php
+
+return [
+    // controller
+    'index_title' => 'Quản lý bài hát',
+    'create_title' => 'Thêm bài hát',
+    'created' => ':name bài hát đã được thêm',
+    'update_title' => 'Cập nhật \':name\' bài hát',
+    'updated' => ':name bài hát đã được cập nhật',
+    'deleted' => 'Xóa \':name\' bài hát thành công',
+    'error' => 'Bài hát không tồn tại. Vui lòng thử lại.',
+    // index
+    'label_add' => 'Thêm bài hát',
+    'label_success' => 'Thành công',
+    'label_error' => 'Lỗi',
+    'td_name' => 'Tên bài hát',
+    'td_author' => 'Tác giả',
+    'td_artist' => 'Nghệ sĩ',
+    'td_source' => 'Nguồn',
+    'td_action' => 'Hành động',
+    'td_genre' => 'Thể loại',
+    'label_cancel' => 'Hủy',
+    'alert_script' => 'Bạn có muốn xóa bài hát :name?',
+    'year_active' => 'Năm hoạt động',
+    'year' => 'năm',
+    'label_album_released' => 'Album đã phát hành',
+    'empty_album' => 'Đang cập nhật ...',
+    'empty_genre' => 'Đang cập nhật ...',
+    'empty_artist' => 'Đang cập nhật ...',
+    'trend_success' => 'Xu hướng của bài hát ":track_name" đã được cập nhật',
+    // create
+    'label' => 'Quản lý bài hát',
+    'label_form' => '<strong>Bài hát</strong> Form Create',
+    'form_name' => 'Tên bài hát',
+    'form_author' => 'Tác giả bài hát',
+    'form_genres' => 'Thể loại',
+    'form_lyric' => 'Lời bài hát',
+    'form_source' => 'Nguồn',
+    'form_path' => 'Path',
+    'nhaccuatui' => 'nhaccuatui.com',
+    'nhacvn' => 'nhac.vn',
+    // edit
+    'label_form_update' => '<strong>Bài hát</strong> Form Update',
+    'old_image' => 'Hình ảnh cũ',
+];

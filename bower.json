@@ -1,0 +1,21 @@
+{
+  "name": "music-online",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Nguyen Huu Dat <sr.nguyenhuudat@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sirnguyenhuudat/my-music",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "package-music-online": "*"
+  }
+}
